@@ -15,7 +15,7 @@
     />
   </head>
   <body
-    class="bg-gradient-to-tl from-[#81004E] via-[#090E42] to-[#00639B] relative overflow-hidden bg-no-repeat"
+    class="bg-gradient-to-tl from-[#81004E] via-[#090E42] to-[#00639B] relative bg-no-repeat scroll-smooth"
   >
     <img
       src="./asset/images/cloud.png"
@@ -25,42 +25,36 @@
     <img
       src="./asset/images/star.png"
       alt=""
-      class="absolute top-0 right-4 -z-50 opacity-25"
+      class="absolute top-0 right-4 -z-50 opacity-25 max-sm:top-80 max-sm:w-50 max-sm:right-5"
     />
     <img
       src="./asset/images/hole.png"
       alt=""
-      class="absolute top-30 left-96 -z-50 max-md:left-40 max-lg:left-72 max-sm:left-0 opacity-25"
+      class="absolute top-30 left-96 -z-50 max-md:left-0 max-xl:left-12 max-lg:left-0 max-sm:left-0 opacity-25 max-sm:top-48"
     />
 
     <header>
       <div>
-        <h4 class="text-white font-bold text-2xl ml-16 mt-8 mb-3">
+        <h4
+          class="text-white font-bold text-2xl ml-16 mt-8 mb-3 max-sm:text-xl max-sm:ml-5 max-sm:mt-5 max-sm:mb-10"
+        >
           simpleDice
         </h4>
       </div>
 
       <div>
-        <ul class="flex gap-3 items-center m-auto justify-center">
-          <li
-            class="text-white p-4 rounded-lg font-normal text-base bg-[#3C78D2]"
-          >
+        <ul
+          class="text-base flex gap-3 items-center m-auto justify-center max-sm:grid-rows-2 max-sm:grid max-sm:grid-flow-col max-sm:gap-1 max-sm:text-sm"
+        >
+          <li class="text-white p-4 rounded-lg font-normal bg-[#3C78D2]">
             2 Side dice
           </li>
-          <li class="text-white p-3 rounded-lg font-medium text-base">
-            4 side dice
-          </li>
-          <li class="text-white p-3 rounded-lg font-medium text-base">
-            6 side dice
-          </li>
-          <li class="text-white p-3 rounded-lg font-medium text-base">
-            8 side dice
-          </li>
-          <li class="text-white p-3 rounded-lg font-medium text-base">
-            12 side dice
-          </li>
+          <li class="text-white p-3 rounded-lg font-medium">4 side dice</li>
+          <li class="text-white p-3 rounded-lg font-medium">6 side dice</li>
+          <li class="text-white p-3 rounded-lg font-medium">8 side dice</li>
+          <li class="text-white p-3 rounded-lg font-medium">12 side dice</li>
         </ul>
-        <hr class="max-w-5xl m-auto mt-8 border-[#11718F]" />
+        <hr class="max-w-5xl m-auto mt-4 border-[#11718F] max-sm:w-72" />
       </div>
     </header>
 
@@ -69,12 +63,16 @@
         <img
           src="./asset/images/dice.png"
           alt="dice"
-          class="animate-bounce mix-blend-luminosity justify-center m-auto mt-18 mb-10"
+          class="animate-bounce mix-blend-luminosity justify-center m-auto mt-18 mb-10 max-sm:w-60"
         />
       </div>
 
-      <div class="m-5 flex justify-center items-center content-center gap-5">
-        <label for="guessnumber" class="text-white w-40 text-right"
+      <div
+        class="m-5 flex justify-center items-center content-center gap-5 max-sm:flex-col"
+      >
+        <label
+          for="guessnumber"
+          class="text-white w-40 text-right max-sm:w-full max-sm:text-center"
           >Please enter your guess number</label
         >
         <input
@@ -84,24 +82,30 @@
           id="guessnumber"
         />
         <button
-          class="text-white text-lg font-semibold bg-[#3AE457] px-8 py-3 rounded-lg"
+          class="text-white text-lg font-semibold bg-[#3AE457] px-8 py-3 rounded-lg max-sm:w-full"
         >
           Roll
         </button>
       </div>
 
-      <hr class="max-w-2xl m-auto mt-8 border-[#11718F]" />
-      <div class="mt-12 mb-12 h-32 flex justify-center">
+      <hr
+        class="max-w-2xl m-auto mt-8 border-[#11718F] max-sm:w-72 max-sm:pb-8"
+      />
+      <div
+        class="mt-12 mb-30 h-32 flex justify-center max-sm:flex-col max-sm:mx-8 max-sm:mb-25 max-sm:"
+      >
         <div
-          class="flex flex-col justify-center text-center max-w-lg px-8 items-center content-center rounded-lg border-2 border-[#006AB8]"
+          class="flex flex-col justify-center text-center max-w-lg px-8 items-center content-center rounded-lg border-2 border-[#006AB8] max-sm:p-4"
         >
-          <h6 class="text-white font-medium text-base">
+          <h6 class="text-white font-medium text-base max-sm:text-sm">
             Your guess number is right
           </h6>
-          <h1 class="mt-4 text-white font-medium text-4xl">You Win</h1>
+          <h1 class="mt-4 text-white font-medium text-4xl max-sm:mt-2">
+            You Win
+          </h1>
         </div>
         <div
-          class="flex flex-col justify-center text-center max-w-sm px-8 rounded-lg bg-gradient-to-tl from-[#901C97] to-[#164889]"
+          class="flex flex-col justify-center text-center max-w-sm px-8 rounded-lg bg-gradient-to-tl from-[#901C97] to-[#164889] max-sm:p-4"
         >
           <h6 class="text-white font-medium text-base">Your number is</h6>
           <h1 class="mt-4 text-white font-medium text-5xl">8</h1>
