@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html", "./4Side.html", "./6Side.html", "./8Side.html", "./12Side.html",
-    "./main.{js,ts,jsx,tsx}",
+    "./main.js",
   ],
   theme: {
     extend: {
