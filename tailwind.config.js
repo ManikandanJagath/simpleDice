@@ -2,6 +2,10 @@
 const tailwindConfig = {
   content: [
     "./index.html",
+    "./4Side.html",
+    "./6Side.html",
+    "./8Side.html",
+    "./12Side.html",
     "./src/main.js",
   ],
   theme: {
