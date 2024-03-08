@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const tailwindConfig = {
   content: [
-    "./index.html",
-    "./4Side.html",
-    "./6Side.html",
-    "./8Side.html",
-    "./12Side.html",
+    "./index.html", "./public/4Side.html", "./public/6Side.html", "./public/8Side.html", "./public/12Side.html",
     "./src/main.js",
   ],
   theme: {
